@@ -31,8 +31,11 @@ See example below.
 # Output
 
 **AAseq** A data.frame of all 20 amino acids.
+
 **AAn** The length of AASeq.
+
 **codon** The length of protseq.
+
 **list9mers** A list of length=codon inclusing 9-mers for each codon.
 
 # Example
