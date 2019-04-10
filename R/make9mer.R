@@ -1,12 +1,16 @@
 #' make9mer
 #'
-#' 9mer generator from protein sequence of length at least 18 amino acid
+#' 9mer generator from protein sequence
+#' @details needs a protein length at least 18 amino acid
 #' @param protseq Sequence of the protein. Data.frame with: codon number in codon column, and amino acid for each codon in aminoacid column
-#' @keywords 
-#' @export
+#' 
+#' @return list9mers. List of length equal of protein length. Includes data frames with 9-mers.
+#' 
+#' @author Nathan Lemonnier \email{nathanael.lemonnier@@gmail.com}
+#' 
 #' @examples
 #' protseq <- data.frame(  codon = seq(1:20)
-#'                       , aminoacid = c("A","C","D","E","F","G","H","I","K","L","M","N","P","Q","R","S","T","V","W","Y")
+#'                       , aminoacid = c("M","E","E","P","Q","S","D","P","S","V","E","P","P","L","S","Q","E","T","F","S","D")
 #'                       )
 #' make9mer(protseq = protseq)
 
