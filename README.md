@@ -8,19 +8,16 @@
 
 # Installation
 
-The package can be installed with
+The package can be installed and loaded with
 
 ```r
 install_github("nahtan/make9mer")
+library(make9mer)
 ```
-
-After installation, the package can be loaded into R.
-
-    library(make9mer)
 
 # Using make9mer
 
-The main function in the **make9mer** package is `make9mer()`.
+The main function in the **make9mer** package is `make9mer(protseq=protseq)`.
 
 See example below.
 
@@ -30,13 +27,7 @@ See example below.
 
 # Output
 
-**AAseq** A data.frame of all 20 amino acids.
-
-**AAn** The length of AASeq.
-
-**codon** The length of protseq.
-
-**list9mers** A list of length=codon inclusing 9-mers for each codon.
+**list9mers** List of length equal of protein length. Includes data frames with 9-mers.
 
 # Example
 ```r
